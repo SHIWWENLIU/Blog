@@ -2,7 +2,6 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files'
 import rehypePrettyCode from 'rehype-pretty-code'
 import remarkGfm from 'remark-gfm'
-import { json } from 'stream/consumers'
 import { visit } from 'unist-util-visit'
 import GithubSlugger from 'github-slugger'
 import rehypeSlug from 'rehype-slug'

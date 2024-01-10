@@ -3,11 +3,7 @@ import Accent from "../components/Accent";
 
 
 export default function HomePage({
-    featuredPosts,
   }) {
-    // const populatedPosts = useInjectContentMeta('blog', featuredPosts);
-  
-    // const isLoaded = useLoaded();
   
     return (
         <main className="mx-8 lg:mx-20">
@@ -19,7 +15,7 @@ export default function HomePage({
                     className='mb-8 md:text-4xl text-[#555] dark:text-[#bbb] text-3xl'
                     data-fade='1'
                   >
-                    Shawn's Blog
+                    Shawn&apos;s Blog
                   </Accent>
                   <p
                     className={cn(
@@ -28,7 +24,7 @@ export default function HomePage({
                     )}
                     data-fade='1'
                   >
-                    Hey, this is Shawn's blog
+                    Hey, this is Shawn&apos;s blog
                   </p>
                   <p
                     className={cn(
@@ -67,7 +63,7 @@ export default function HomePage({
                     )}
                     data-fade='3'
                   >
-                    This site is built with Contentlayer and NestJS. For in-page components, I'm using React.
+                    This site is built with Contentlayer and NestJS. For in-page components, I&apos;m using React.
                   </p>
                   <hr
                     className='mx-auto md:my-[2em] h-0 w-[50px] border-t-[1px] border-[#7d7d7d4d] my-[1em]'
