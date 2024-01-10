@@ -1,0 +1,67 @@
+---
+title: Prepare
+date: 2023-10-24
+describe: Q&A
+---
+
+## design pattern
+
+### EventEmitter
+
+```javascript
+// EventEmitter
+class EventEmitter {
+  constructor() {
+    // store events like: { click: [ handle1, handle2 ]  }
+    this.events = {}
+  }
+  // subscribe events
+  on(eventName, callback) {
+    if (!this.events[eventName]) {
+      // store name
+      this.events[eventName] = [callback]
+    } else {
+      // push in array
+      this.events[eventName].push(callback)
+    }
+  }
+  // emit method
+  emit(eventName, ...rest) {
+    this.events[eventName] &&
+      this.events[eventName].forEach(f => f.apply(this, rest))
+  }
+  // remove method
+  remove(eventName, callback) {
+    if (this.events[eventName]) {
+      this.events[eventName] = this.events[eventName].filter(f => f != callback)
+    }
+  }
+  // run event once, then remove
+  once(eventName, callback) {
+    const fn = () => {
+      callback() // callback in fn
+      this.remove(eventName, fn) 
+    }
+    this.on(eventName, fn)
+  }
+}
+```
+
+## storage
+- localStorage: localStorage is a way to store data on the client’s computer. It allows the saving of key/value pairs in a web browser and it stores data with no expiration date. User has the ability to clear the browser data/cache to erase all localStorage data.
+
+- SessionStorage: stores data only for a session, meaning that the data is stored until the browser (or tab) is closed.
+
+- cookie: Stores data that has to be sent back to the server with subsequent XHR requests. Its expiration varies based on the type and the expiration duration can be set from either server-side or client-side .
+
+| | cookie   | local storage   | session storage   |
+|----| ---- | ---- | ---- |
+|Initiator | Client or server   | Client   | 	Client  |
+|Expiry | Manually set   | Forever   | 	On tab close   |
+|Capacity (per domain) | 4kb | 5MB | 	5MB |
+|Persistent across browser sessions|Depends on whether expiration is set	| 	Yes| No |
+
+## async & defer
+- Async: Downloads the script file during HTML parsing and will pause the HTML parser to execute it when it has finished downloading.
+
+- Defer: Defer downloads the script file during HTML parsing and will only execute it after the HTML parser has completed. Not all browsers support this.

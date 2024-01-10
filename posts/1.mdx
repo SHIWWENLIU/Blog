@@ -1,0 +1,45 @@
+---
+title: Tik-Tok
+date: 2023-11-24
+describe: interview
+---
+
+## tik-tok - interview
+
+#### Event Loop
+what is the output
+```javascript
+console.log('begin');
+setTimeout(() => {
+  console.log('setTimeout 1');
+  Promise.resolve()
+    .then(() => {
+      console.log('promise 1');
+      setTimeout(() => {
+        console.log('setTimeout2 between promise1&2');
+      });
+    })
+    .then(() => {
+      console.log('promise 2');
+    });
+}, 0);
+
+console.log('end');
+```
+answer:
+
+```javascript
+begin
+end
+setTimeout 1
+promise 1
+promise 2
+setTimeout2 between promise1&2
+```
+### optimization
+- Reduce http requests
+- Asynchronous loading
+- Server-side rendering
+- Browser cache optimization
+
+## follow-up

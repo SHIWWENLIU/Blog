@@ -1,0 +1,33 @@
+---
+title: React-Testing-Library
+date: 2023-12-09
+describe: Test
+---
+
+## testing-library-react
+### Structure
+- render component
+- find element
+- interact with element
+- assert results as expected
+  
+### code
+```javascript
+import { render, screen } from '@testing-library/react';
+import TodoFooter from '../TodoFooter';
+
+import { BrowserRouter } from "react-router-dom"
+const Mock=({val})=>{
+    return(< BrowserRouter>
+        <TodoFooter numberOfIncompleteTasks={val}/>
+        </BrowserRouter>
+        )
+        
+}
+it('renders learn react link',async () => {
+  render(<Mock val={5}/>);
+  const linkElement = screen.getByText(/5 tasks left/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+```
