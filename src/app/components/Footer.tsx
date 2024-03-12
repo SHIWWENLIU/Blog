@@ -2,7 +2,7 @@ import React from 'react'
 import Accent from './Accent';
 import { FiMail } from 'react-icons/fi';
 import { IconType } from 'react-icons/lib';
-import { SiLinkedin } from 'react-icons/si';
+import { SiLinkedin,SiGithub } from 'react-icons/si';
 
 export default function Footer() {
   return (
@@ -26,9 +26,11 @@ function SocialLinks() {
     return (
       <div className='mt-2 flex space-x-4'>
         <div className='flex items-center justify-center'>
+        Find me on 
         {
             socials.map((social)=>
-            (<div key={social.href}>
+            (<div className='mx-2'
+            key={social.href}>
                 <a
                 target='_blank'
                 rel='noopener noreferrer'
@@ -56,7 +58,17 @@ function SocialLinks() {
       id: 'Linkedin',
       text: (
         <>
-        Find me on <Accent className='font-medium'>Linkedin</Accent>
+        <Accent className='font-medium'>Linkedin</Accent>
+        </>
+      ),
+    },
+    {
+      href: 'https://github.com/SHIWWENLIU?tab=repositories',
+      icon: SiGithub,
+      id: 'github',
+      text: (
+        <>
+        <Accent className='font-medium'>Github</Accent>
         </>
       ),
     }
