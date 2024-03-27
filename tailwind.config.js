@@ -22,5 +22,6 @@ module.exports = {
       
     },
   },
-  plugins: [require('@tailwindcss/typography'),nextui()],
+  plugins: [require('@tailwindcss/typography'),
+  nextui({defaultTheme: "light"})],
 }

@@ -33,7 +33,7 @@ export default function HomePage({
                     )}
                     data-fade='3'
                   >
-                    JS, TS, Vue, React, Java, algorithm lovers.
+                    JS, TS, Vue, React, Java, C# lovers.
                   </p>
                   <hr
                     className='mx-auto md:my-[2em] h-0 w-[50px] border-t-[1px] border-[#7d7d7d4d] my-[1em]'
@@ -48,11 +48,17 @@ export default function HomePage({
                   >
                     Experienced full stack web application software engineer
                     <p></p>
-                    -3 years of experience in creating single page web applications using React and Vue
+                    -3 years of experience in creating web applications using ReactJS and VueJS
                     <p></p>
-                    -Proficient in developing server side APIs using Java and Spring Boot
+                    -Proficient in developing RESTful APIs using Java and Spring Boot
                     <p></p>
-                    -Solid experience on CI/CD, DevOps, Cloud technologies
+                    -Extensive experience in building mirco-service and Web APIs using C# and .NET core
+                    <p></p>
+                    -Solid experience on CI/CD, DevOps, Cloud technologies like AWS Cloud
+                    <p></p>
+                    -Familiar with SQL technologies such as PostgreSQL and MongoDB
+                    <p></p>
+                    -Basic understanding of GrapgQL and reladted building tools like Apollo Server and Client
                     <p></p>
                     -Demonstrated expertise in working within an agile development environment and delivering projects on time
                   </p>
@@ -63,7 +69,7 @@ export default function HomePage({
                     )}
                     data-fade='3'
                   >
-                    This site is built with Contentlayer and NestJS. For in-page components, I&apos;m using React.
+                    This site is built with Contentlayer and NextJS. For in-page components, I&apos;m using React.
                   </p>
                   <hr
                     className='mx-auto md:my-[2em] h-0 w-[50px] border-t-[1px] border-[#7d7d7d4d] my-[1em]'
