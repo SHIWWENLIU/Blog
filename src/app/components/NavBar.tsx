@@ -12,7 +12,7 @@ export default function NavBar() {
             link:'/about'
         },
         {
-            title:'Others',
+            title:'Timeline',
             link:'/others'
         },
     ]
