@@ -48,19 +48,19 @@ export default function HomePage({
                   >
                     Experienced full stack web application software engineer
                     <p></p>
-                    -3 years of experience in creating web applications using ReactJS and VueJS
+                    -4+ years of experience in creating modern web applications using ReactJS and VueJS
                     <p></p>
-                    -Proficient in developing RESTful APIs using Java and Spring Boot
+                    -Proficient in developing RESTful APIs using .NET EF and Spring Boot Framework
                     <p></p>
-                    -Extensive experience in building mirco-service and Web APIs using C# and .NET core
+                    -Extensive experience in building mirco-service using RabbitMQ
                     <p></p>
-                    -Solid experience on CI/CD, DevOps, Cloud technologies like AWS Cloud
+                    -Solid experience on CI/CD, DevOps, Cloud technologies like AWS Amplify, Lambda, S3, DynamoDB
                     <p></p>
                     -Familiar with SQL technologies such as PostgreSQL and MongoDB
                     <p></p>
-                    -Basic understanding of GrapgQL and reladted building tools like Apollo Server and Client
+                    -Basic understanding of GrapgQL and related building tools in AWS Amplify
                     <p></p>
-                    -Demonstrated expertise in working within an agile development environment and delivering projects on time
+                    -Demonstrated expertise in working within an agile development environment
                   </p>
                   <p
                     className={cn(
